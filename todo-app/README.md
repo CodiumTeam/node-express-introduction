@@ -46,7 +46,7 @@ Implement a node app to manage the list of things to do.
 
 #### Tests
     As a technical lead
-    I want at least one test by User Story
+    I want, at least, one test by User Story
     to ensure that our software has low defects
     so we will have happy users
 
