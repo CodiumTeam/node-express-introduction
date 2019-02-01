@@ -21,3 +21,13 @@ Don't forget to use the [`.gitignore`](https://git-scm.com/docs/gitignore) file
     git commit -m "usefull commit message"
 
 
+#### Hello world 
+
+Create a program that shows "Hello world!" on the [console](https://nodejs.org/api/console.html)
+
+#### Hello your name
+    
+Create a program that shows, for example, "Hello Luis!" on the console
+
+Tip: Investigate the variable `process.argv`
+
