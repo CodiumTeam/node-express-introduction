@@ -20,3 +20,7 @@ Finish the TO-DO app with the Extra user stories
 
 ### Homework
 [Weather prediction](weather-prediction)
+
+# 4. Fourth day
+### Class exercise
+[REST Money converter](money-converter)
