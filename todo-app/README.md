@@ -1,4 +1,4 @@
-# TODO app
+# To-do app
 
 ## Goal
 Implement a node app to manage the list of things to do.

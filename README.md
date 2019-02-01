@@ -9,7 +9,7 @@ Refactor the JS code created during the bootcamp.
 ### Class exercise
 [Node Synchronous](node-synchronous)
 
-[TODO app](todo-app)
+[To-do app](todo-app)
 
 ### Homework
 Finish the TO-DO app with the Extra user stories
@@ -24,3 +24,6 @@ Finish the TO-DO app with the Extra user stories
 # 4. Fourth day
 ### Class exercise
 [REST Money converter](money-converter)
+
+### Homework
+[WebApp To-do app](todo-web-app)
