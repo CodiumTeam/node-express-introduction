@@ -46,3 +46,11 @@ Use [_`fs`_](https://nodejs.org/api/fs.html) to read `rates.json` file.
 
 
 Tips: Investigate `fs.readFileSync`
+
+
+#### Play with arrays and functional programming
+
+Use [_`array`_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array) functions of JS interact with sets of data.
+
+- Create a node app that returns the name of the currencies that receive less than 1 unit for each €
+- Create a node app that returns the name of the currencies and how many € do you need to get 1 unit of that currencies
