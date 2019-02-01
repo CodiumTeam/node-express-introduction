@@ -8,3 +8,4 @@ You should refactor the JS code created during the bootcamp.
 # 2. Second day
 ## Class exercise
 - [node-synchronous](node-synchronous)
+- [TODO app](todo-app)
