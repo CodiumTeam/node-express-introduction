@@ -33,8 +33,16 @@ Tip: Investigate the variable `process.argv`
 
 #### Play with _yargs_ library
 
-Install the [_yargs_](https://yargs.js.org/) library to process the input
+Install the [_`yargs`_](https://yargs.js.org/) library to process the input
 
 - Create a node app that has a help option to learn how to use the app
 - Create a node app that can handle the [named parameters](https://en.wikipedia.org/wiki/Named_parameter)
 
+#### Play with _fs_ node module
+
+Use [_`fs`_](https://nodejs.org/api/fs.html) to read `rates.json` file.
+
+- Create a node app that returns the current change from EURO to a currency introduced as argument   
+
+
+Tips: Investigate `fs.readFileSync`
