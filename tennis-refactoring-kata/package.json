@@ -1,0 +1,15 @@
+{
+  "name": "tennis-refactoring-kata",
+  "version": "1.0.0",
+  "description": "Kata to work code smells and refactorings",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "test-watch": "./node_modules/mocha/bin/mocha --watch"
+  },
+  "author": "Luis Rovirosa <luis@codium.team>",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
