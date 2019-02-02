@@ -55,3 +55,6 @@ Use [_`array`_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/
 
 - Create a node app that returns the name of the currencies that receive less than 1 unit for each €
 - Create a node app that returns the name of the currencies and how many € do you need to get 1 unit of that currencies
+
+## Author
+[Luis Rovirosa](https://twitter.com/luisrovirosa)

@@ -46,3 +46,6 @@ Tip: Documentation of [async / await](https://developer.mozilla.org/es/docs/Web/
 Install [request-promise](https://github.com/request/request-promise#installation) to make http requests receiving a promise.
 
 - Create a program that receives an URL as argument, retrieves their content and shows the first 200 characters on the console. 
+
+## Author
+[Luis Rovirosa](https://twitter.com/luisrovirosa)

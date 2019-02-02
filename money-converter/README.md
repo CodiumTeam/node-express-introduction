@@ -31,3 +31,5 @@ Implement a node app that interacts with a Third-party service.
 
 Note: it's necessary to register and obtain a token to interact with the API.
 
+## Author
+[Luis Rovirosa](https://twitter.com/luisrovirosa)

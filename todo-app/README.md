@@ -59,3 +59,6 @@ Implement a node app to manage the list of things to do.
 
 ## Extra User Stories to implement
 
+
+## Author
+[Luis Rovirosa](https://twitter.com/luisrovirosa)

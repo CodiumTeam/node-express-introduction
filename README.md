@@ -29,3 +29,6 @@ Finish the TO-DO app with the Extra user stories
 
 ### Homework
 [WebApp To-do app](todo-web-app)
+
+## Author
+[Luis Rovirosa](https://twitter.com/luisrovirosa)
