@@ -6,17 +6,21 @@
 
 ## Mini katas
 
-#### Hello world asynchronous
-- Write a program using promises that say "Hello world!" after 1 second.
+#### Hello world asynchronous with callback
+- Write a program using a [_`callback`_](https://developer.mozilla.org/es/docs/Glossary/Callback_function) that say "Hello world!" after 1 second.
+
+Tip: remember [_`setTimeout`_](https://developer.mozilla.org/es/docs/Web/API/WindowTimers/setTimeout)
+
+
+#### Hello world asynchronous with promises
+- Write a program using promises that say "Hello world!" after 1 second, when the promise is resolved.
 
 Tip: remember _`resolve`_
 
 Tip: remember [_`then`_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Promise/then)
 
-Tip: remember [_`setTimeout`_](https://developer.mozilla.org/es/docs/Web/API/WindowTimers/setTimeout)
-
 #### Failing Hello world asynchronous
-- Write a program using promises that fails to fulfill the promise after 1 second and when capturing say "The end of the world!".
+- Write a program using promises that say "The end of the world!" after 1 second, when the promise is rejected.
 
 Tip: remember _`reject`_
 
