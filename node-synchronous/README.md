@@ -23,13 +23,13 @@ Don't forget to use the [`.gitignore`](https://git-scm.com/docs/gitignore) file
 
 #### Hello world 
 
-Create a program that shows "Hello world!" on the [console](https://nodejs.org/api/console.html)
+- Create a program that shows "Hello world!" on the [console](https://nodejs.org/api/console.html)
 
 #### Hello your name
     
-Create a program that shows, for example, "Hello Luis!" on the console
+- Create a program that shows, for example, "Hello Luis!" on the console
 
-Tip: Investigate the variable `process.argv`
+Tip: Investigate the variable _`process.argv`_
 
 #### Play with _yargs_ library
 
@@ -43,9 +43,9 @@ Install the [_`yargs`_](https://yargs.js.org/) library to process the input
 Use [_`fs`_](https://nodejs.org/api/fs.html) to read `rates.json` file.
 
 - Create a node app that returns the current change from EURO to a currency introduced as argument   
-
-
-Tips: Investigate `fs.readFileSync`
+- When we do not have exchange rate for the introduced currency show a message saying "Sorry, we don't support the currency XXX"
+ 
+Tips: Investigate _`fs.readFileSync`_
 
 
 #### Play with arrays and functional programming

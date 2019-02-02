@@ -7,7 +7,7 @@
 ## Mini katas
 
 #### Hello world asynchronous
-Write a program using promises that say "Hello world!" after 1 second.
+- Write a program using promises that say "Hello world!" after 1 second.
 
 Tip: remember _`resolve`_
 
@@ -16,8 +16,17 @@ Tip: remember [_`then`_](https://developer.mozilla.org/es/docs/Web/JavaScript/Re
 Tip: remember [_`setTimeout`_](https://developer.mozilla.org/es/docs/Web/API/WindowTimers/setTimeout)
 
 #### Failing Hello world asynchronous
-Write a program using promises that fails to fulfill the promise after 1 second and when capturing say "The end of the world!".
+- Write a program using promises that fails to fulfill the promise after 1 second and when capturing say "The end of the world!".
 
 Tip: remember _`reject`_
 
 Tip: remember [_`catch`_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Promise/then)
+
+#### Play with fs node module in asynchronous way
+     
+ Use fs to read rates.json file.
+ 
+ - Create a node app that returns the current change from EURO to a currency introduced as argument
+ - Raise an Error when we do not have exchange rate for the introduced currency and show a message saying "Sorry, we don't support the currency XXX"
+ 
+ Tips: Investigate _`fs.readFile`_ and do not use _`fs.readFileSync`_
