@@ -30,3 +30,9 @@ Tip: remember [_`catch`_](https://developer.mozilla.org/es/docs/Web/JavaScript/R
  - Raise an Error when we do not have exchange rate for the introduced currency and show a message saying "Sorry, we don't support the currency XXX"
  
  Tips: Investigate _`fs.readFile`_ and do not use _`fs.readFileSync`_
+
+#### HTTP request
+
+Install [request-promise](https://github.com/request/request-promise#installation) to make http requests receiving a promise.
+
+- Create a program that receives an URL as argument, retrieves their content and shows the first 200 characters on the console. 
