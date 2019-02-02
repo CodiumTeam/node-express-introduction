@@ -2,7 +2,7 @@
 
 ## Goal
 - Start to playing with node
-- Familiarize with some usefull libraries
+- Familiarize with some useful libraries
 
 ## Mini katas
 
