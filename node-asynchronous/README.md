@@ -30,6 +30,12 @@ Tip: remember [_`catch`_](https://developer.mozilla.org/es/docs/Web/JavaScript/R
  - Raise an Error when we do not have exchange rate for the introduced currency and show a message saying "Sorry, we don't support the currency XXX"
  
  Tips: Investigate _`fs.readFile`_ and do not use _`fs.readFileSync`_
+ 
+#### Async / await
+
+- Transform the code of _Play with fs node module in asynchronous way_ to use _`async`_ / _`await`_ instead of promises
+
+Tip: Documentation of [async / await](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/funcion_asincrona)
 
 #### HTTP request
 
