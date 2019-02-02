@@ -7,7 +7,7 @@ Refactor the JS code created during the bootcamp.
 
 # 2. Synchronous node
 ### Class exercise
-[Node Synchronous](node-synchronous)
+[Introduction to Node Synchronous](node-synchronous)
 
 [To-do app](todo-app)
 
@@ -16,7 +16,7 @@ Finish the TO-DO app with the Extra user stories
 
 # 3. Asynchronous node
 ### Class exercise
-[Node Asynchronous](node-asynchronous)
+[Introduction to Node Asynchronous](node-asynchronous)
 
 [Money converter](money-converter)
 
@@ -25,6 +25,8 @@ Finish the TO-DO app with the Extra user stories
 
 # 4. Express and REST
 ### Class exercise
+[Introduction to express](express)
+
 [REST Money converter](money-converter)
 
 ### Homework

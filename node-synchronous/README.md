@@ -1,4 +1,4 @@
-# Node Synchronous
+# Introduction to Node Synchronous
 
 ## Goal
 - Start to playing with node
