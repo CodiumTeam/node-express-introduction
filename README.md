@@ -16,6 +16,8 @@ Finish the TO-DO app with the Extra user stories
 
 # 3. Third day
 ### Class exercise
+[Node Asynchronous](node-asynchronous)
+
 [Money converter](money-converter)
 
 ### Homework
