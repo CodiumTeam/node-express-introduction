@@ -33,6 +33,7 @@ Finish the TO-DO app with the Extra user stories
 [WebApp To-do app](todo-app-web)
 
 # 5. Slow down and take care of what you do
+We will rework any of the previous exercises to consolidate the learning.  
 
 ## Author
 [Luis Rovirosa](https://twitter.com/luisrovirosa)
