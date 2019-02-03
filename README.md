@@ -30,7 +30,7 @@ Finish the TO-DO app with the Extra user stories
 [Money converter web](money-converter-web)
 
 ### Homework
-[WebApp To-do app](todo-web-app)
+[WebApp To-do app](todo-app-web)
 
 # 5. Slow down and take care of what you do
 
