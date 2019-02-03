@@ -24,5 +24,11 @@ Download the program using the [Postman webpage](https://learning.getpostman.com
 
 Tips: [How to make a request using Postman](https://learning.getpostman.com/docs/postman/launching_postman/sending_the_first_request/) 
 
+#### Hello your name
+- Create a webserver that returns, for example, "Hello Luis!" when accessing via _GET_ to the `/`
+- The name of the person should be read from a file.
+
+Tips: Use [_`fs`_](https://nodejs.org/api/fs.html) to read the file.
+
 ## Author
 [Luis Rovirosa](https://twitter.com/luisrovirosa)
