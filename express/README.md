@@ -43,7 +43,13 @@ Tip: You may need to use Postman to access this end-point.
     - The date when the request was made
     - The url that accesss
 
-Tip: Follow the [Middleware express guide](https://expressjs.com/es/guide/writing-middleware.html) 
+Tip: Follow the [Middleware express guide](https://expressjs.com/es/guide/writing-middleware.html)
+ 
+#### Deploy your app
+- Make your app available on internet.
+
+Tips: Follow the [Getting started guide on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+
 
 ## Author
 [Luis Rovirosa](https://twitter.com/luisrovirosa)
