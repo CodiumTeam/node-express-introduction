@@ -15,20 +15,20 @@ Follow the steps described on [Express installation guide](https://expressjs.com
 #### Express hello world
 - Create a webserver that returns "Hello world!" when accessing via _GET_ to the `/`
 
-Tips: [Hello world guide](https://expressjs.com/es/starter/hello-world.html)
+Tip: [Hello world guide](https://expressjs.com/es/starter/hello-world.html)
 
 #### Hello world using Postman
 - Make a request to our just created server using Postman
 
 Download the program using the [Postman webpage](https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates/)
 
-Tips: [How to make a request using Postman](https://learning.getpostman.com/docs/postman/launching_postman/sending_the_first_request/) 
+Tip: [How to make a request using Postman](https://learning.getpostman.com/docs/postman/launching_postman/sending_the_first_request/) 
 
 #### Hello your name
 - Create a webserver that returns, for example, "Hello Luis!" when accessing via _GET_ to the `/`
 - The name of the person should be read from a file.
 
-Tips: Use [_`fs`_](https://nodejs.org/api/fs.html) to read the file.
+Tip: Use [_`fs`_](https://nodejs.org/api/fs.html) to read the file.
 
 #### First post request
 - Create an end-point that allows to update the name that we will return on the previous mini kata.
@@ -40,8 +40,7 @@ Tip: You may need to use Postman to access this end-point.
 - Update the _Hello your name_ to display a webpage with proper HTML Tags
 - Use [handlebars](https://handlebarsjs.com/) as a template library 
 
-Tips:
-- Integrate handlebars with express [using express-handlebars](https://github.com/ericf/express-handlebars#installation)
+Tip: Integrate handlebars with express [using express-handlebars](https://github.com/ericf/express-handlebars#installation)
 
 #### First middleware
 - Adds a middleware to log no a file all the request made to our webserver.
@@ -55,7 +54,7 @@ Tip: Follow the [Middleware express guide](https://expressjs.com/es/guide/writin
 #### Deploy your app
 - Make your app available on internet.
 
-Tips: Follow the [Getting started guide on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+Tip: Follow the [Getting started guide on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 
 
 ## Author

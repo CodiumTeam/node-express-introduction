@@ -46,7 +46,7 @@ Use [_`fs`_](https://nodejs.org/api/fs.html) to read `rates.json` file.
 - Create a node app that returns the current change from EURO to a currency introduced as argument   
 - When we do not have exchange rate for the introduced currency show a message saying "Sorry, we don't support the currency XXX"
  
-Tips: Investigate _`fs.readFileSync`_
+Tip: Investigate _`fs.readFileSync`_
 
 
 #### 5. Play with arrays and functional programming
