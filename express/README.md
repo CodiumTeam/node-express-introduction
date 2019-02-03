@@ -48,7 +48,7 @@ Tips:
 - The filename should be called _requests.log_
 - Each line of the log should contain:
     - The date when the request was made
-    - The url that accesss
+    - The url that access
 
 Tip: Follow the [Middleware express guide](https://expressjs.com/es/guide/writing-middleware.html)
  
