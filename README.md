@@ -27,7 +27,7 @@ Finish the TO-DO app with the Extra user stories
 ### Class exercise
 [Introduction to express](express)
 
-[REST Money converter](money-converter)
+[Money converter web](money-converter-web)
 
 ### Homework
 [WebApp To-do app](todo-web-app)
