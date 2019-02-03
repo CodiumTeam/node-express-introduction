@@ -30,5 +30,11 @@ Tips: [How to make a request using Postman](https://learning.getpostman.com/docs
 
 Tips: Use [_`fs`_](https://nodejs.org/api/fs.html) to read the file.
 
+#### First post request
+- Create an end-point that allows to update the name that we will return on the previous mini kata.
+- The HTTP Response code should be [201](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success).
+
+Tip: You may need to use Postman to access this end-point.
+
 ## Author
 [Luis Rovirosa](https://twitter.com/luisrovirosa)
