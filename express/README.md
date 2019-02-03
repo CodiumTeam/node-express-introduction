@@ -36,5 +36,14 @@ Tips: Use [_`fs`_](https://nodejs.org/api/fs.html) to read the file.
 
 Tip: You may need to use Postman to access this end-point.
 
+#### First middleware
+- Adds a middleware to log no a file all the request made to our webserver.
+- The filename should be called _requests.log_
+- Each line of the log should contain:
+    - The date when the request was made
+    - The url that accesss
+
+Tip: Follow the [Middleware express guide](https://expressjs.com/es/guide/writing-middleware.html) 
+
 ## Author
 [Luis Rovirosa](https://twitter.com/luisrovirosa)
