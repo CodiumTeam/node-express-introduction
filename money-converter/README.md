@@ -1,7 +1,7 @@
 # Money converter
 
 ## Goal
-Implement a node app that interacts with a Third-party service.
+- Implement a node app that interacts with a Third-party service.
 
 ## User Stories to implement
 
