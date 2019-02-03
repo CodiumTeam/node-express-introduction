@@ -36,6 +36,13 @@ Tips: Use [_`fs`_](https://nodejs.org/api/fs.html) to read the file.
 
 Tip: You may need to use Postman to access this end-point.
 
+#### First template
+- Update the _Hello your name_ to display a webpage with proper HTML Tags
+- Use [handlebars](https://handlebarsjs.com/) as a template library 
+
+Tips:
+- Integrate handlebars with express [using express-handlebars](https://github.com/ericf/express-handlebars#installation)
+
 #### First middleware
 - Adds a middleware to log no a file all the request made to our webserver.
 - The filename should be called _requests.log_
