@@ -13,7 +13,7 @@ Follow the steps described on [Express installation guide](https://expressjs.com
 ## Mini katas
 
 #### Express hello world
-- Create a webserver that returns "Hello world!" when accessing via _GET_ to the `/`
+- Create a webserver that returns "Hello world!" when accessing via _GET_ to the `/hello`
 
 Tip: [Hello world guide](https://expressjs.com/es/starter/hello-world.html)
 
@@ -25,7 +25,12 @@ Download the program using the [Postman webpage](https://learning.getpostman.com
 Tip: [How to make a request using Postman](https://learning.getpostman.com/docs/postman/launching_postman/sending_the_first_request/) 
 
 #### Hello your name
-- Create a webserver that returns, for example, "Hello Luis!" when accessing via _GET_ to the `/`
+- Create a webserver that returns, for example, "Hello Luis!" when accessing via _GET_ to the `/hello/Luis`
+
+Tip: Read about [Route paths](https://expressjs.com/en/guide/routing.html#route-paths).
+
+#### Hello stored name
+- Create a webserver that returns, for example, "Hello Luis!" when accessing via _GET_ to the `/hello`
 - The name of the person should be read from a file.
 
 Tip: Use [_`fs`_](https://nodejs.org/api/fs.html) to read the file.
