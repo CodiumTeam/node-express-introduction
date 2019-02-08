@@ -27,7 +27,7 @@ Tip: [How to make a request using Postman](https://learning.getpostman.com/docs/
 #### Hello your name
 - Create a webserver that returns, for example, "Hello Luis!" when accessing via _GET_ to the `/hello/Luis`
 
-Tip: Read about [Route paths](https://expressjs.com/en/guide/routing.html#route-paths).
+Tip: Read about [Route parameters](https://expressjs.com/en/guide/routing.html#route-parameters).
 
 #### Hello stored name
 - Create a webserver that returns, for example, "Hello Luis!" when accessing via _GET_ to the `/hello`
