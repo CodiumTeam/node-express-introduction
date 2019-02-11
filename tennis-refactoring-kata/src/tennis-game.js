@@ -41,8 +41,6 @@ TennisGame.prototype.getScoreNearToEndGame = function() {
     return score;
 };
 
-module.exports = TennisGame;
-
 TennisGame.prototype.getScoreNormalScore = function() {
     let score = '';
     let tempScore;
@@ -69,3 +67,5 @@ TennisGame.prototype.getScoreNormalScore = function() {
     }
     return score;
 };
+
+module.exports = TennisGame;
