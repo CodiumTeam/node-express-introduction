@@ -34,10 +34,10 @@ TennisGame.prototype.getScoreWithSameScore = function() {
 TennisGame.prototype.getScoreNearToEndGame = function() {
     let score;
     var minusResult = Math.abs(this.m_score1 - this.m_score2);
-    if (minusResult === 1) {
-        score = 'Advantage ' + this.winningPlayer();
-    } else if (this.gameHasEnded()) {
+    if (this.gameHasEnded()) {
         score = 'Win for ' + this.winningPlayer();
+    } else if (minusResult === 1) {
+        score = 'Advantage ' + this.winningPlayer();
     }
     return score;
 };
