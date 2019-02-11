@@ -15,7 +15,7 @@ TennisGame.prototype.wonPoint = function(playerName) {
 TennisGame.prototype.getScore = function() {
     if (this.hasSameScore()) {
         return this.getScoreWithSameScore();
-    } else if (this.m_score1 >= 4 || this.m_score2 >= 4) {
+    } else if (this.moreThan4PointsWonByAPlayer()) {
         if (this.gameHasEnded()) {
             return 'Win for ' + this.winningPlayer();
         } else {
@@ -46,6 +46,10 @@ TennisGame.prototype.gameHasEnded = function() {
 
 TennisGame.prototype.winningPlayer = function() {
     return this.m_score1 > this.m_score2 ? 'player1' : 'player2';
+};
+
+TennisGame.prototype.moreThan4PointsWonByAPlayer = function() {
+    return this.m_score1 >= 4 || this.m_score2 >= 4;
 };
 
 module.exports = TennisGame;
