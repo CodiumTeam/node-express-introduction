@@ -50,22 +50,27 @@ TennisGame.prototype.getScoreNormalScore = function() {
             score += '-';
             tempScore = this.m_score2;
         }
-        switch (tempScore) {
-            case 0:
-                score += 'Love';
-                break;
-            case 1:
-                score += 'Fifteen';
-                break;
-            case 2:
-                score += 'Thirty';
-                break;
-            case 3:
-                score += 'Forty';
-                break;
-        }
+        score = partialScore(tempScore, score);
     }
     return score;
 };
+
+function partialScore(tempScore, score) {
+    switch (tempScore) {
+        case 0:
+            score += 'Love';
+            break;
+        case 1:
+            score += 'Fifteen';
+            break;
+        case 2:
+            score += 'Thirty';
+            break;
+        case 3:
+            score += 'Forty';
+            break;
+    }
+    return score;
+}
 
 module.exports = TennisGame;
