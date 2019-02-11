@@ -16,7 +16,7 @@ TennisGame.prototype.getScore = function() {
     var score = "";
     var tempScore = 0;
     if (this.m_score1 === this.m_score2) {
-        score = getScoreWithSameScore(this.m_score1);
+        score = this.getScoreWithSameScore();
     } else if (this.m_score1 >= 4 || this.m_score2 >= 4) {
         var minusResult = this.m_score1 - this.m_score2;
         if (minusResult === 1) score = "Advantage player1";
@@ -49,9 +49,9 @@ TennisGame.prototype.getScore = function() {
     return score;
 };
 
-function getScoreWithSameScore(m_score1) {
+TennisGame.prototype.getScoreWithSameScore = function() {
     let score;
-    switch (m_score1) {
+    switch (this.m_score1) {
         case 0:
             score = 'Love-All';
             break;
@@ -66,6 +66,6 @@ function getScoreWithSameScore(m_score1) {
             break;
     }
     return score;
-}
+};
 
 module.exports = TennisGame;
