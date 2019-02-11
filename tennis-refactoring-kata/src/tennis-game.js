@@ -39,7 +39,7 @@ TennisGame.prototype.getScoreNearToEndGame = function() {
         score = 'Advantage ' + winningPlayer;
     } else if (minusResult === -1) {
         score = 'Advantage ' + winningPlayer;
-    } else if (minusResult >= 2) {
+    } else if (minusResult === 2) {
         score = 'Win for ' + winningPlayer;
     } else {
         score = 'Win for ' + winningPlayer;
