@@ -34,10 +34,15 @@ TennisGame.prototype.getScoreWithSameScore = function() {
 TennisGame.prototype.getScoreNearToEndGame = function() {
     let score;
     var minusResult = this.m_score1 - this.m_score2;
-    if (minusResult === 1) score = 'Advantage player1';
-    else if (minusResult === -1) score = 'Advantage player2';
-    else if (minusResult >= 2) score = 'Win for player1';
-    else score = 'Win for player2';
+    if (minusResult === 1) {
+        score = 'Advantage player1';
+    } else if (minusResult === -1) {
+        score = 'Advantage player2';
+    } else if (minusResult >= 2) {
+        score = 'Win for player1';
+    } else {
+        score = 'Win for player2';
+    }
     return score;
 };
 
