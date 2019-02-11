@@ -21,6 +21,12 @@ TennisGame.prototype.getScore = function() {
         } else {
             return 'Advantage ' + this.winningPlayer();
         }
+    } else if (this.moreThan4PointsWonByAPlayer()) {
+        if (this.gameHasEnded()) {
+            return 'Win for ' + this.winningPlayer();
+        } else {
+            return 'Advantage ' + this.winningPlayer();
+        }
     } else {
         return this.getScoreNormalScore();
     }
