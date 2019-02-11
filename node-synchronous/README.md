@@ -32,14 +32,21 @@ Don't forget to use the [`.gitignore`](https://git-scm.com/docs/gitignore) file
 
 Tip: Investigate the variable _`process.argv`_
 
-#### 3. Play with _yargs_ library
+#### 3. Hello world with _yargs_
 
-Install the [_`yargs`_](https://yargs.js.org/) library to process the input
+Install the [_`yargs`_](https://yargs.js.org/) library to process the input with [named parameters](https://en.wikipedia.org/wiki/Named_parameter) 
+
+The command will be used as `node file.js --name Luis`
+
+Tip: [Some examples](https://github.com/yargs/yargs/blob/master/docs/examples.md)
+
+#### 4. Play with _yargs_ library
 
 - Create a node app that has a help option to learn how to use the app
-- Create a node app that can handle the [named parameters](https://en.wikipedia.org/wiki/Named_parameter)
 
-#### 4. Play with _fs_ node module
+Tip: [Some examples](https://github.com/yargs/yargs/blob/master/docs/examples.md)
+
+#### 5. Play with _fs_ node module
 
 Use [_`fs`_](https://nodejs.org/api/fs.html) to read `rates.json` file.
 
@@ -49,7 +56,7 @@ Use [_`fs`_](https://nodejs.org/api/fs.html) to read `rates.json` file.
 Tip: Investigate _`fs.readFileSync`_
 
 
-#### 5. Play with arrays and functional programming
+#### 6. Play with arrays and functional programming
 
 Use [_`array`_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array) functions of JS interact with sets of data.
 
