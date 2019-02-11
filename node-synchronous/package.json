@@ -1,0 +1,14 @@
+{
+  "name": "synchronous",
+  "version": "1.0.0",
+  "description": "## Goal - Start to playing with node - Familiarize with some useful libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^12.0.5"
+  }
+}
