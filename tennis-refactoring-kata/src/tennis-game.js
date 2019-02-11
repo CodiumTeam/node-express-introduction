@@ -42,17 +42,7 @@ TennisGame.prototype.getScoreNearToEndGame = function() {
 };
 
 TennisGame.prototype.getScoreNormalScore = function() {
-    let score = '';
-    let tempScore;
-    for (var i = 1; i < 3; i++) {
-        if (i === 1) tempScore = this.m_score1;
-        else {
-            score += '-';
-            tempScore = this.m_score2;
-        }
-        score += partialScore(tempScore);
-    }
-    return score;
+    return partialScore(this.m_score1) + '-' + partialScore(this.m_score2);
 };
 
 function partialScore(tempScore) {
