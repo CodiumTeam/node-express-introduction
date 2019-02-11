@@ -40,7 +40,11 @@ TennisGame.prototype.getScoreNormalScore = function() {
 
 TennisGame.prototype.gameHasEnded = function() {
     return this.moreThan4PointsWonByAPlayer() &&
-        Math.abs(this.m_score1 - this.m_score2) >= 2;
+        this.thereIsADifferenceOfMoreThan1Point();
+};
+
+TennisGame.prototype.thereIsADifferenceOfMoreThan1Point = function() {
+    return Math.abs(this.m_score1 - this.m_score2) >= 2;
 };
 
 TennisGame.prototype.winningPlayer = function() {
