@@ -17,12 +17,8 @@ TennisGame.prototype.getScore = function() {
         return this.getScoreWithSameScore();
     } else if (this.moreThan4PointsWonByAPlayer() && this.gameHasEnded()) {
         return 'Win for ' + this.winningPlayer();
-    } else if (this.moreThan4PointsWonByAPlayer()) {
-        if (this.gameHasEnded()) {
-            return 'Win for ' + this.winningPlayer();
-        } else {
-            return 'Advantage ' + this.winningPlayer();
-        }
+    } else if (this.moreThan4PointsWonByAPlayer() && !this.gameHasEnded()) {
+        return 'Advantage ' + this.winningPlayer();
     } else {
         return this.getScoreNormalScore();
     }
