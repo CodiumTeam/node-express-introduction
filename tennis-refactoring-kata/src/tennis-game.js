@@ -1,58 +1,62 @@
-var TennisGame = function(player1Name, player2Name) {
-    this.m_score1 = 0;
-    this.m_score2 = 0;
-    this.player1Name = player1Name;
-    this.player2Name = player2Name;
-};
+'use strict';
 
-TennisGame.prototype.wonPoint = function(playerName) {
-    if (playerName === this.player1Name)
-        this.m_score1 += 1;
-    else
-        this.m_score2 += 1;
-};
+class TennisGame {
+    constructor(player1Name, player2Name) {
+        this.m_score1 = 0;
+        this.m_score2 = 0;
+        this.player1Name = player1Name;
+        this.player2Name = player2Name;
+    };
 
-TennisGame.prototype.getScore = function() {
-    if (this.hasSameScore()) {
-        return this.getScoreWithSameScore();
-    } else if (this.gameHasEnded()) {
-        return 'Win for ' + this.winningPlayer();
-    } else if (this.moreThan4PointsWonByAPlayer()) {
-        return 'Advantage ' + this.winningPlayer();
-    } else {
-        return this.getScoreNormalScore();
-    }
-};
+    wonPoint(playerName) {
+        if (playerName === this.player1Name)
+            this.m_score1 += 1;
+        else
+            this.m_score2 += 1;
+    };
 
-TennisGame.prototype.hasSameScore = function() {
-    return this.m_score1 === this.m_score2;
-};
+    getScore() {
+        if (this.hasSameScore()) {
+            return this.getScoreWithSameScore();
+        } else if (this.gameHasEnded()) {
+            return 'Win for ' + this.winningPlayer();
+        } else if (this.moreThan4PointsWonByAPlayer()) {
+            return 'Advantage ' + this.winningPlayer();
+        } else {
+            return this.getScoreNormalScore();
+        }
+    };
 
-TennisGame.prototype.getScoreWithSameScore = function() {
-    const tieScores = {0: 'Love-All', 1: 'Fifteen-All', 2: 'Thirty-All'};
-    return tieScores[this.m_score1] || 'Deuce';
-};
+    hasSameScore() {
+        return this.m_score1 === this.m_score2;
+    };
 
-TennisGame.prototype.getScoreNormalScore = function() {
-    const scores = ['Love', 'Fifteen', 'Thirty', 'Forty'];
-    return scores[this.m_score1] + '-' + scores[this.m_score2];
-};
+    getScoreWithSameScore() {
+        const tieScores = {0: 'Love-All', 1: 'Fifteen-All', 2: 'Thirty-All'};
+        return tieScores[this.m_score1] || 'Deuce';
+    };
 
-TennisGame.prototype.gameHasEnded = function() {
-    return this.moreThan4PointsWonByAPlayer() &&
-        this.thereIsADifferenceOfMoreThan1Point();
-};
+    getScoreNormalScore() {
+        const scores = ['Love', 'Fifteen', 'Thirty', 'Forty'];
+        return scores[this.m_score1] + '-' + scores[this.m_score2];
+    };
 
-TennisGame.prototype.thereIsADifferenceOfMoreThan1Point = function() {
-    return Math.abs(this.m_score1 - this.m_score2) >= 2;
-};
+    gameHasEnded() {
+        return this.moreThan4PointsWonByAPlayer() &&
+            this.thereIsADifferenceOfMoreThan1Point();
+    };
 
-TennisGame.prototype.winningPlayer = function() {
-    return this.m_score1 > this.m_score2 ? 'player1' : 'player2';
-};
+    thereIsADifferenceOfMoreThan1Point() {
+        return Math.abs(this.m_score1 - this.m_score2) >= 2;
+    };
 
-TennisGame.prototype.moreThan4PointsWonByAPlayer = function() {
-    return this.m_score1 >= 4 || this.m_score2 >= 4;
-};
+    winningPlayer() {
+        return this.m_score1 > this.m_score2 ? 'player1' : 'player2';
+    };
+
+    moreThan4PointsWonByAPlayer() {
+        return this.m_score1 >= 4 || this.m_score2 >= 4;
+    };
+}
 
 module.exports = TennisGame;
