@@ -14,7 +14,7 @@ TennisGame.prototype.wonPoint = function(playerName) {
 
 TennisGame.prototype.getScore = function() {
     var score = '';
-    if (this.m_score1 === this.m_score2) {
+    if (this.hasSameScore()) {
         score = this.getScoreWithSameScore();
     } else if (this.m_score1 >= 4 || this.m_score2 >= 4) {
         score = this.getScoreNearToEndGame();
@@ -22,6 +22,10 @@ TennisGame.prototype.getScore = function() {
         score = this.getScoreNormalScore();
     }
     return score;
+};
+
+TennisGame.prototype.hasSameScore = function () {
+    return this.m_score1 === this.m_score2;
 };
 
 TennisGame.prototype.getScoreWithSameScore = function() {
