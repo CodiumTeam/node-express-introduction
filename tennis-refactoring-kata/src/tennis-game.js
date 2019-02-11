@@ -42,12 +42,8 @@ TennisGame.prototype.getScoreNearToEndGame = function() {
 };
 
 TennisGame.prototype.getScoreNormalScore = function() {
-    return partialScore(this.m_score1) + '-' + partialScore(this.m_score2);
-};
-
-function partialScore(tempScore) {
     const scores = ['Love', 'Fifteen', 'Thirty', 'Forty'];
-    return scores[tempScore];
-}
+    return scores[this.m_score1] + '-' + scores[this.m_score2];
+};
 
 module.exports = TennisGame;
