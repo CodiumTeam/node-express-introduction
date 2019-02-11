@@ -34,7 +34,7 @@ TennisGame.prototype.getScoreWithSameScore = function() {
 TennisGame.prototype.getScoreNearToEndGame = function() {
     let score;
     var minusResult = Math.abs(this.m_score1 - this.m_score2);
-    const gameHasEnded = minusResult >= 2;
+    const gameHasEnded = this.gameHasEnded();
     const winningPlayer = this.m_score1 > this.m_score2 ? 'player1' : 'player2';
     if (minusResult === 1) {
         score = 'Advantage ' + winningPlayer;
@@ -47,6 +47,10 @@ TennisGame.prototype.getScoreNearToEndGame = function() {
 TennisGame.prototype.getScoreNormalScore = function() {
     const scores = ['Love', 'Fifteen', 'Thirty', 'Forty'];
     return scores[this.m_score1] + '-' + scores[this.m_score2];
+};
+
+TennisGame.prototype.gameHasEnded = function () {
+    return Math.abs(this.m_score1 - this.m_score2) >= 2;
 };
 
 module.exports = TennisGame;
