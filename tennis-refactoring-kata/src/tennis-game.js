@@ -15,7 +15,7 @@ TennisGame.prototype.wonPoint = function(playerName) {
 TennisGame.prototype.getScore = function() {
     if (this.hasSameScore()) {
         return this.getScoreWithSameScore();
-    } else if (this.moreThan4PointsWonByAPlayer() && this.gameHasEnded()) {
+    } else if (this.gameHasEnded()) {
         return 'Win for ' + this.winningPlayer();
     } else if (this.moreThan4PointsWonByAPlayer() && !this.gameHasEnded()) {
         return 'Advantage ' + this.winningPlayer();
@@ -39,7 +39,8 @@ TennisGame.prototype.getScoreNormalScore = function() {
 };
 
 TennisGame.prototype.gameHasEnded = function() {
-    return Math.abs(this.m_score1 - this.m_score2) >= 2;
+    return this.moreThan4PointsWonByAPlayer() &&
+        Math.abs(this.m_score1 - this.m_score2) >= 2;
 };
 
 TennisGame.prototype.winningPlayer = function() {
