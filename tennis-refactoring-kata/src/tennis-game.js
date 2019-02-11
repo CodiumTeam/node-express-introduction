@@ -28,11 +28,9 @@ TennisGame.prototype.hasSameScore = function() {
 
 TennisGame.prototype.getScoreWithSameScore = function() {
     const tieScores = {0: 'Love-All', 1: 'Fifteen-All', 2: 'Thirty-All'};
-    if (tieScores[this.m_score1] !== undefined) {
-        return tieScores[this.m_score1];
-    } else {
-        return 'Deuce';
-    }
+    return tieScores[this.m_score1] !== undefined ?
+        tieScores[this.m_score1] :
+        'Deuce';
 };
 
 TennisGame.prototype.getScoreNearToEndGame = function() {
