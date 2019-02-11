@@ -27,13 +27,11 @@ TennisGame.prototype.hasSameScore = function() {
 };
 
 TennisGame.prototype.getScoreWithSameScore = function() {
-    const tieScores = {0: 'Love-All', 1: 'Fifteen-All'};
+    const tieScores = {0: 'Love-All', 1: 'Fifteen-All', 2: 'Thirty-All'};
     if (tieScores[this.m_score1] !== undefined){
         return tieScores[this.m_score1];
     }
     switch (this.m_score1) {
-        case 2:
-            return 'Thirty-All';
         default:
             return 'Deuce';
     }
