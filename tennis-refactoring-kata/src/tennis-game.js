@@ -15,12 +15,8 @@ TennisGame.prototype.wonPoint = function(playerName) {
 TennisGame.prototype.getScore = function() {
     if (this.hasSameScore()) {
         return this.getScoreWithSameScore();
-    } else if (this.moreThan4PointsWonByAPlayer()) {
-        if (this.gameHasEnded()) {
-            return 'Win for ' + this.winningPlayer();
-        } else {
-            return 'Advantage ' + this.winningPlayer();
-        }
+    } else if (this.moreThan4PointsWonByAPlayer() && this.gameHasEnded()) {
+        return 'Win for ' + this.winningPlayer();
     } else if (this.moreThan4PointsWonByAPlayer()) {
         if (this.gameHasEnded()) {
             return 'Win for ' + this.winningPlayer();
