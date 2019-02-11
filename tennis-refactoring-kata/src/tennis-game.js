@@ -35,7 +35,7 @@ TennisGame.prototype.getScoreNearToEndGame = function() {
     let score;
     var minusResult = Math.abs(this.m_score1 - this.m_score2);
     const gameHasEnded = this.gameHasEnded();
-    const winningPlayer = this.m_score1 > this.m_score2 ? 'player1' : 'player2';
+    const winningPlayer = this.winningPlayer();
     if (minusResult === 1) {
         score = 'Advantage ' + winningPlayer;
     } else if (gameHasEnded) {
@@ -49,8 +49,12 @@ TennisGame.prototype.getScoreNormalScore = function() {
     return scores[this.m_score1] + '-' + scores[this.m_score2];
 };
 
-TennisGame.prototype.gameHasEnded = function () {
+TennisGame.prototype.gameHasEnded = function() {
     return Math.abs(this.m_score1 - this.m_score2) >= 2;
+};
+
+TennisGame.prototype.winningPlayer = function() {
+    return this.m_score1 > this.m_score2 ? 'player1' : 'player2';
 };
 
 module.exports = TennisGame;
