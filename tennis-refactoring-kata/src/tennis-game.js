@@ -13,18 +13,16 @@ TennisGame.prototype.wonPoint = function(playerName) {
 };
 
 TennisGame.prototype.getScore = function() {
-    var score = '';
     if (this.hasSameScore()) {
-        score = this.getScoreWithSameScore();
+        return this.getScoreWithSameScore();
     } else if (this.m_score1 >= 4 || this.m_score2 >= 4) {
-        score = this.getScoreNearToEndGame();
+        return this.getScoreNearToEndGame();
     } else {
-        score = this.getScoreNormalScore();
+        return this.getScoreNormalScore();
     }
-    return score;
 };
 
-TennisGame.prototype.hasSameScore = function () {
+TennisGame.prototype.hasSameScore = function() {
     return this.m_score1 === this.m_score2;
 };
 
