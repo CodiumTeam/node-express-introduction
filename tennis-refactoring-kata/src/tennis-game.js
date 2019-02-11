@@ -16,7 +16,11 @@ TennisGame.prototype.getScore = function() {
     if (this.hasSameScore()) {
         return this.getScoreWithSameScore();
     } else if (this.m_score1 >= 4 || this.m_score2 >= 4) {
-        return this.getScoreNearToEndGame();
+        if (this.gameHasEnded()) {
+            return 'Win for ' + this.winningPlayer();
+        } else {
+            return 'Advantage ' + this.winningPlayer();
+        }
     } else {
         return this.getScoreNormalScore();
     }
@@ -29,14 +33,6 @@ TennisGame.prototype.hasSameScore = function() {
 TennisGame.prototype.getScoreWithSameScore = function() {
     const tieScores = {0: 'Love-All', 1: 'Fifteen-All', 2: 'Thirty-All'};
     return tieScores[this.m_score1] || 'Deuce';
-};
-
-TennisGame.prototype.getScoreNearToEndGame = function() {
-    if (this.gameHasEnded()) {
-        return 'Win for ' + this.winningPlayer();
-    } else {
-        return 'Advantage ' + this.winningPlayer();
-    }
 };
 
 TennisGame.prototype.getScoreNormalScore = function() {
