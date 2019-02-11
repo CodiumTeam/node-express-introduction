@@ -32,13 +32,11 @@ TennisGame.prototype.getScoreWithSameScore = function() {
 };
 
 TennisGame.prototype.getScoreNearToEndGame = function() {
-    let score;
     if (this.gameHasEnded()) {
-        score = 'Win for ' + this.winningPlayer();
+        return 'Win for ' + this.winningPlayer();
     } else {
-        score = 'Advantage ' + this.winningPlayer();
+        return 'Advantage ' + this.winningPlayer();
     }
-    return score;
 };
 
 TennisGame.prototype.getScoreNormalScore = function() {
