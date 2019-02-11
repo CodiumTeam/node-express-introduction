@@ -6,41 +6,20 @@ var TennisGame = function(player1Name, player2Name) {
 };
 
 TennisGame.prototype.wonPoint = function(playerName) {
-    if (playerName === "player1")
+    if (playerName === 'player1')
         this.m_score1 += 1;
     else
         this.m_score2 += 1;
 };
 
 TennisGame.prototype.getScore = function() {
-    var score = "";
-    var tempScore = 0;
+    var score = '';
     if (this.m_score1 === this.m_score2) {
         score = this.getScoreWithSameScore();
     } else if (this.m_score1 >= 4 || this.m_score2 >= 4) {
         score = this.getScoreNearToEndGame();
     } else {
-        for (var i = 1; i < 3; i++) {
-            if (i === 1) tempScore = this.m_score1;
-            else {
-                score += "-";
-                tempScore = this.m_score2;
-            }
-            switch (tempScore) {
-                case 0:
-                    score += "Love";
-                    break;
-                case 1:
-                    score += "Fifteen";
-                    break;
-                case 2:
-                    score += "Thirty";
-                    break;
-                case 3:
-                    score += "Forty";
-                    break;
-            }
-        }
+        score = this.getScoreNormalScore();
     }
     return score;
 };
@@ -75,3 +54,30 @@ TennisGame.prototype.getScoreNearToEndGame = function() {
 };
 
 module.exports = TennisGame;
+
+TennisGame.prototype.getScoreNormalScore = function() {
+    let score = '';
+    let tempScore;
+    for (var i = 1; i < 3; i++) {
+        if (i === 1) tempScore = this.m_score1;
+        else {
+            score += '-';
+            tempScore = this.m_score2;
+        }
+        switch (tempScore) {
+            case 0:
+                score += 'Love';
+                break;
+            case 1:
+                score += 'Fifteen';
+                break;
+            case 2:
+                score += 'Thirty';
+                break;
+            case 3:
+                score += 'Forty';
+                break;
+        }
+    }
+    return score;
+};
