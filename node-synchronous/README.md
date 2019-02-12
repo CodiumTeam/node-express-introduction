@@ -62,8 +62,13 @@ Tips:
 
 Use [_`array`_](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array) functions of JS interact with sets of data.
 
+**Important**: Use `rates_as_array.json`
 - Create a node app that returns the name of the currencies that receive less than 1 unit for each €
 - Create a node app that returns the name of the currencies and how many € do you need to get 1 unit of that currencies
 
+Tips:
+ - Investigate [Array.filter()](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
+ - Investigate [Array.forEach()](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
+ - Investigate [Array.map()](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map) 
 ## Author
 [Luis Rovirosa](https://twitter.com/luisrovirosa)
