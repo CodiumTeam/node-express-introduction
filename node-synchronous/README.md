@@ -70,5 +70,13 @@ Tips:
  - Investigate [Array.filter()](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
  - Investigate [Array.forEach()](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
  - Investigate [Array.map()](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map) 
+
+#### 7. Introduction to synchronous tests
+Install and use [mocha](https://mochajs.org) to test the code. 
+
+Test the mini katas 5 and 6.
+
+Tip: You will need to create functions and export them in order to be accessible from tests.
+
 ## Author
 [Luis Rovirosa](https://twitter.com/luisrovirosa)
