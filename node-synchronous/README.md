@@ -72,9 +72,9 @@ Tips:
  - Investigate [Array.map()](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map) 
 
 #### 7. Introduction to synchronous tests
-Install and use [mocha](https://mochajs.org) to test the code. 
+Install and use [mocha](https://mochajs.org) and [chai](https://www.chaijs.com) to test the code. 
 
-Test the mini katas 5 and 6.
+Test the mini kata 5.
 
 Tip: You will need to create functions and export them in order to be accessible from tests.
 
