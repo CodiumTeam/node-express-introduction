@@ -7,7 +7,7 @@ Refactor the JS code created during the bootcamp.
 
 # 2. Synchronous node
 ### Class exercise
-[Introduction to Node Synchronous](node-synchronous)
+[Introduction to Node Synchronous](node-synchronous) | [Solution](https://github.com/CodiumTeam/node-express-introduction/tree/solution/node-synchronous)
 
 [To-do app](todo-app)
 
@@ -16,7 +16,7 @@ Finish the TO-DO app with the Extra user stories
 
 # 3. Asynchronous node
 ### Class exercise
-[Introduction to Node Asynchronous](node-asynchronous)
+[Introduction to Node Asynchronous](node-asynchronous) | [Solution](https://github.com/CodiumTeam/node-express-introduction/tree/solution/node-asynchronous)
 
 [Money converter](money-converter)
 
