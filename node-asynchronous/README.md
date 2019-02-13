@@ -7,7 +7,8 @@
 ## Mini katas
 
 #### 1. Hello world asynchronous with callback
-- Write a program using a [_`callback`_](https://developer.mozilla.org/es/docs/Glossary/Callback_function) that say "Hello world!" after 1 second.
+- Write a function that execute a [_`callback`_](https://developer.mozilla.org/es/docs/Glossary/Callback_function) after 1 second.
+- To validate the usage use a simple callback that says "Hello World!"
 
 Tip: remember [_`setTimeout`_](https://developer.mozilla.org/es/docs/Web/API/WindowTimers/setTimeout)
 
@@ -37,7 +38,22 @@ Tip: Investigate _`fs.readFile`_ and do not use _`fs.readFileSync`_
  
 #### 5. Async / await
 
-- Transform the code of _Play with fs node module in asynchronous way_ to use _`async`_ / _`await`_ instead of promises
+- Transform the following code to use _`async`_ / _`await`_ instead of promises
+
+```javascript
+function delayedString() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve('Hello world'), 1000);
+    });
+}
+
+function logDelayed() {
+    delayedString()
+    .then((message) => console.log(message));
+}
+
+logDelayed();
+```
 
 Tip: Documentation of [async / await](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/funcion_asincrona)
 
@@ -47,5 +63,17 @@ Install [request-promise](https://github.com/request/request-promise#installatio
 
 - Create a program that receives an URL as argument, retrieves their content and shows the first 200 characters on the console. 
 
+#### 7. Asynchronous test
+Write a test to ensure the following function returns the string _Hello world_ after a second
+
+```javascript
+function delayedString() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve('Hello world'), 1000);
+    });
+}
+```
+
+Tip: Remember to install [mocha](https://mochajs.org) and [chai](https://www.chaijs.com).
 ## Author
 [Luis Rovirosa](https://twitter.com/luisrovirosa)
