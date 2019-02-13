@@ -4,12 +4,16 @@
   "description": "## Goal - Start to playing with asynchronous calls - Learn [Promises](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Promise)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha || ./node_modules/.bin/.mocha.cmd"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
