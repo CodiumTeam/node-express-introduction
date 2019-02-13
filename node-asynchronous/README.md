@@ -7,7 +7,8 @@
 ## Mini katas
 
 #### 1. Hello world asynchronous with callback
-- Write a program using a [_`callback`_](https://developer.mozilla.org/es/docs/Glossary/Callback_function) that say "Hello world!" after 1 second.
+- Write a function that execute a [_`callback`_](https://developer.mozilla.org/es/docs/Glossary/Callback_function) after 1 second.
+- To validate the usage use a simple callback that says "Hello World!"
 
 Tip: remember [_`setTimeout`_](https://developer.mozilla.org/es/docs/Web/API/WindowTimers/setTimeout)
 
