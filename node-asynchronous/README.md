@@ -63,5 +63,17 @@ Install [request-promise](https://github.com/request/request-promise#installatio
 
 - Create a program that receives an URL as argument, retrieves their content and shows the first 200 characters on the console. 
 
+#### 7. Asynchronous test
+Write a test to ensure the following function returns the string _Hello world_ after a second
+
+```javascript
+function delayedString() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve('Hello world'), 1000);
+    });
+}
+```
+
+Tip: Remember to install [mocha](https://mochajs.org) and [chai](https://www.chaijs.com).
 ## Author
 [Luis Rovirosa](https://twitter.com/luisrovirosa)
