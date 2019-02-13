@@ -38,7 +38,22 @@ Tip: Investigate _`fs.readFile`_ and do not use _`fs.readFileSync`_
  
 #### 5. Async / await
 
-- Transform the code of _Play with fs node module in asynchronous way_ to use _`async`_ / _`await`_ instead of promises
+- Transform the following code to use _`async`_ / _`await`_ instead of promises
+
+```javascript
+function delayedString() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve('Hello world'), 1000);
+    });
+}
+
+function logDelayed() {
+    delayedString()
+    .then((message) => console.log(message));
+}
+
+logDelayed();
+```
 
 Tip: Documentation of [async / await](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/funcion_asincrona)
 
