@@ -1,3 +1,6 @@
+// Run the exercise with:
+// node src/2_promises.js
+
 // First solution
 let promise = new Promise((resolve, reject) => {
    setTimeout(resolve, 1000);
