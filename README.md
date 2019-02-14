@@ -25,7 +25,7 @@ Finish the TO-DO app with the Extra user stories
 
 # 4. Express and REST
 ### Class exercise
-[Introduction to express](express)
+[Introduction to express](express-introduction)
 
 [Money converter web](money-converter-web)
 
