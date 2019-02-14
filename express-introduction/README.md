@@ -15,7 +15,9 @@ Follow the steps described on [Express installation guide](https://expressjs.com
 #### 1. Express hello world
 - Create a webserver that returns "Hello world!" when accessing via _GET_ to the `/hello`
 
-Tip: [Hello world guide](https://expressjs.com/es/starter/hello-world.html)
+Tip: 
+- [Hello world guide](https://expressjs.com/es/starter/hello-world.html)
+- Use [nodemon](https://nodemon.io/) to have live reload 
 
 #### 2. Hello world using Postman
 - Make a request to our just created server using Postman
@@ -32,14 +34,20 @@ Tip: Read about [Route parameters](https://expressjs.com/en/guide/routing.html#r
 #### 4. Hello stored name
 - Create a webserver that returns, for example, "Hello Luis!" when accessing via _GET_ to the `/hello`
 - The name of the person should be read from a file.
+- Use asynchronous methods.
 
-Tip: Use [_`fs`_](https://nodejs.org/api/fs.html) to read the file.
+Tips:
+- Start from [mini kata 1](#1-express-hello-world) 
+- Use [_`fs`_](https://nodejs.org/api/fs.html) to read the file.
 
 #### 5. First post request
 - Create an end-point that allows to update the name that we will return on the previous mini kata.
 - The HTTP Response code should be [201](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success).
 
-Tip: You may need to use Postman to access this end-point.
+Tip: 
+- You may need to use Postman to access this end-point.
+- Think the type of HTTP request needed.
+- Think the name of the parameter you want to use
 
 #### 6. First template
 - Update the _Hello your name_ to display a webpage with proper HTML Tags
