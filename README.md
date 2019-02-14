@@ -25,7 +25,7 @@ Finish the TO-DO app with the Extra user stories
 
 # 4. Express and REST
 ### Class exercise
-[Introduction to express](express-introduction)
+[Introduction to express](express-introduction) | [Solution](https://github.com/CodiumTeam/node-express-introduction/tree/solution/express-introduction)
 
 [Money converter web](money-converter-web)
 
