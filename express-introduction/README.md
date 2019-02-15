@@ -56,7 +56,7 @@ Tip:
 Tip: Integrate handlebars with express [using express-handlebars](https://github.com/ericf/express-handlebars#installation)
 
 #### 7. First middleware
-- Adds a middleware to log no a file all the request made to our webserver.
+- Adds a middleware to log into a file all the request made to our webserver.
 - The filename should be called _requests.log_
 - Each line of the log should contain:
     - The date when the request was made
